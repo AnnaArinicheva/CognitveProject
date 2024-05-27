@@ -167,12 +167,12 @@ def add_token(token,res_list):
         res_list.append(token)
         return
     first = token[0]
-    if first in emoji.unicode_codes.EMOJI_UNICODE_ENGLISH or first in quotes_list or first in delimiters_list:
+    if first in emoji.EMOJI_DATA or first in quotes_list or first in delimiters_list:
         res_list.append(first)
         add_token(token[1:],res_list)
         return
     last = token[-1]
-    if last in emoji.unicode_codes.EMOJI_UNICODE_ENGLISH or last in quotes_list or last in delimiters_list:
+    if last in emoji.EMOJI_DATA or last in quotes_list or last in delimiters_list:
         add_token(token[0:-1],res_list)
         res_list.append(last)
         return
