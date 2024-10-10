@@ -1,10 +1,10 @@
 *.png
-*.py
 *.csv
 
 another second dataset 3.ipynb
 Untitled.ipynb
 Untitled1.ipynb
+setup.py
 
 .ipynb_checkpoints/
 data/
